@@ -254,9 +254,29 @@ h3 {
   color: #fff8f1;
 }
 
+.button.accent {
+  background: var(--leaf-deep);
+  color: #f7f3ea;
+}
+
 .button.secondary {
   background: rgba(255, 255, 255, 0.68);
   border: 1px solid rgba(34, 49, 39, 0.1);
+}
+
+.button-strong {
+  min-height: 58px;
+  padding: 0 26px;
+  font-size: 1rem;
+  box-shadow: 0 14px 28px rgba(34, 49, 39, 0.16);
+}
+
+.hero-actions-strong .button:first-child {
+  min-width: 230px;
+}
+
+.hero-actions-strong .button:last-child {
+  min-width: 260px;
 }
 
 .text-link {
@@ -289,7 +309,8 @@ h3 {
 .split-layout,
 .feature-band,
 .tips-band,
-.intro-split {
+.intro-split,
+.landing-grid {
   display: grid;
   gap: 18px;
 }
@@ -311,6 +332,10 @@ h3 {
   grid-template-columns: 1.1fr 0.9fr;
 }
 
+.landing-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .tips-band {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 18px;
@@ -323,7 +348,8 @@ h3 {
 .tip-card,
 .callout,
 .table-card,
-.references-box {
+.references-box,
+.landing-panel {
   border: 1px solid var(--line);
   border-radius: 22px;
   background: var(--surface-strong);
@@ -334,8 +360,28 @@ h3 {
 .feature-copy,
 .tip-card,
 .callout,
-.references-box {
+.references-box,
+.landing-panel {
   padding: 24px;
+}
+
+.landing-panel {
+  min-height: 290px;
+  display: flex;
+  align-items: stretch;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 207, 158, 0.18));
+}
+
+.landing-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.landing-copy .button {
+  align-self: start;
+  margin-top: auto;
 }
 
 .callout {
@@ -472,7 +518,8 @@ h3 {
   .hero-layout,
   .content-grid,
   .intro-split,
-  .tips-band {
+  .tips-band,
+  .landing-grid {
     grid-template-columns: 1fr;
   }
 
