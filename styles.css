@@ -28,9 +28,10 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(241, 207, 158, 0.52), transparent 28%),
-    radial-gradient(circle at 82% 10%, rgba(110, 141, 84, 0.2), transparent 18%),
-    linear-gradient(180deg, #f7efdf 0%, #efe4d3 100%);
+    linear-gradient(rgba(247, 239, 223, 0.82), rgba(239, 228, 211, 0.86)),
+    radial-gradient(circle at top left, rgba(241, 207, 158, 0.34), transparent 28%),
+    radial-gradient(circle at 82% 10%, rgba(110, 141, 84, 0.16), transparent 18%),
+    url("https://tse3.mm.bing.net/th/id/OIP.Ft2SvndmGcw00PejIHpYlQHaEK?cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3") center / cover fixed;
 }
 
 a {
